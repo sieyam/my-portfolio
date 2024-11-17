@@ -1,0 +1,96 @@
+#about-popup {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  #about-popup.opacity-100 {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #about-popup.opacity-0 {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+/* Media query for smaller screens */
+@media (max-width: 1155px) {
+  .neon-circle {
+      width: auto; /* Remove fixed width */
+      height: auto; /* Remove fixed height */
+      max-width: 100%; /* Ensure it doesn’t exceed the parent width */
+      max-height: 100%; /* Ensure it doesn’t exceed the parent height */
+  }
+}
+  .neon-circle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid rgba(128, 90, 213, 0.6); /* Purple glow color */
+    box-shadow: 0 0 20px rgba(128, 90, 213, 0.8), 0 0 30px rgba(128, 90, 213, 0.6);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 15px rgba(128, 90, 213, 0.6), 0 0 20px rgba(128, 90, 213, 0.4);
+    }
+    to {
+      box-shadow: 0 0 25px rgba(128, 90, 213, 0.9), 0 0 35px rgba(128, 90, 213, 0.8);
+    }
+  }
+
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+  h2 {
+    font-size: 3rem; /* Smaller font size for mobile */
+  }
+  h3 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (min-width: 640px) {
+  .social-icons {
+    right: 10%; /* Positioning for larger screens */
+  }
+}
+
+
+/* Popup styles */
+.fixed {
+  position: fixed;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-white {
+  background-color: #fff;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.max-w-md {
+  max-width: 28rem;
+}
+
+/* Optional adjustments */
+.fixed {
+  overflow-y: auto; /* Ensures the entire modal can scroll if needed */
+}
