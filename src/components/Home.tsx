@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import { ChevronDown } from "lucide-react";
@@ -132,7 +133,7 @@ const Home: React.FC = () => {
       <a href="https://github.com/sieyam" target="_blank" rel="noopener noreferrer" className={`block p-2 transition duration-300 ${sectionColors[currentTheme].icons} ${sectionColors[currentTheme].background} ${sectionColors[currentTheme].hover.github}`}>
         <FaGithub size={30} />
       </a>
-      <a href="https://www.instagram.com/sieyam3d?utm_source=qr&igsh=dHczYXdvMW4wZWxs" target="_blank" rel="noopener noreferrer" className={`block p-2 transition duration-300 ${sectionColors[currentTheme].icons} ${sectionColors[currentTheme].background} ${sectionColors[currentTheme].hover.kaggle}`}>
+      <a href="https://www.instagram.com/sieyam_3d?igsh=bTE3aW94aDFieHRy" target="_blank" rel="noopener noreferrer" className={`block p-2 transition duration-300 ${sectionColors[currentTheme].icons} ${sectionColors[currentTheme].background} ${sectionColors[currentTheme].hover.kaggle}`}>
         <FaInstagram size={30} />
       </a>
       <a href="https://www.threads.net/@sieyam3d_" target="_blank" rel="noopener noreferrer" className={`block p-2 transition duration-300 ${sectionColors[currentTheme].icons} ${sectionColors[currentTheme].background} ${sectionColors[currentTheme].hover.kaggle}`}>

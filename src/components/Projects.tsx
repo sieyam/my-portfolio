@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Github, ExternalLink } from 'lucide-react';
 
@@ -10,6 +11,7 @@ import projectImage8 from '../assets/images/proj_2_2d.png';
 import projectVideo1 from '../assets/images/projectvideo1-car.mp4';
 import projectVideo2 from '../assets/images/projectvideo2-robot.mp4';
 import projectVideo3 from '../assets/images/projectvideo3-vfx.mp4';
+import projectVideo4 from '../assets/images/project_10_Product_animation.mp4'
 import './Projects.css';
 
 // Updated Project interface
@@ -125,6 +127,19 @@ const projects: Project[] = [
     isVideo: false,
     githubLink: 'https://github.com/sieyam/2d-charactor-animation',
     deployedLink: 'https://github.com/sieyam/2d-charactor-animation',
+  },
+  {
+    id: 10,
+    title: 'Byredo Blanche: A Luxurious Fragrance',
+    description:
+      "Discover the refreshing simplicity of Byredo Blanche, a fragrance that evokes the feeling of freshly laundered linens. With its light and airy scent, it is the epitome of understated luxury.",
+    tools: ["Autodesk Maya",
+            "3ds Max",
+            "Cinema 4D"],
+    mediaUrl: projectVideo4,
+    isVideo: true,
+    githubLink: 'https://github.com/sieyam/Smooth-product-simulation',
+    deployedLink: 'https://github.com/sieyam/Smooth-product-simulation',
   },
 ];
 

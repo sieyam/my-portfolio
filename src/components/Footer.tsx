@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
               <FaFacebook className="h-8 w-8" />
             </a>
             <a
-              href="https://www.instagram.com/sieyam3d?utm_source=qr&igsh=dHczYXdvMW4wZWxs#"
+              href="https://www.instagram.com/sieyam_3d?igsh=bTE3aW94aDFieHRy"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition-transform duration-300"
